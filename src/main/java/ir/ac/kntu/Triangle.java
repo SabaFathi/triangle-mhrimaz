@@ -6,11 +6,11 @@ public class Triangle{
 
     public static void main(String[] args){
 
-        long first,second,third,max,middle,min;
+        int first,second,third,max,middle,min;
 	Scanner scanner = new Scanner(System.in);        
-        first = scanner.nextLong();
-        second = scanner.nextLong();        
-        third = scanner.nextLong();       
+        first = scanner.nextInt();
+        second = scanner.nextInt();        
+        third = scanner.nextInt();       
         scanner.close();
 	if(first < second){
             max = second;
