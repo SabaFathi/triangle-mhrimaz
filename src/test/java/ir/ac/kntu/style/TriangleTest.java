@@ -70,6 +70,7 @@ public class TriangleTest {
 
     @Test
     public void testInvalidTriangle() {
+        System.err.println("$$$GRADER$$$ | ADDSCORE | AMOUNT | REASON");
         assertTrue("Unable to detect invalid trinagle",
                 detectTriangle(1, 3, 5, INVALID));
         assertTrue("Unable to detect invalid trinagle [CHECK OVERFLOW]",
@@ -78,6 +79,7 @@ public class TriangleTest {
 
     @Test
     public void testValidTriangle() {
+        System.err.println("$$$GRADER$$$ | ADDSCORE | AMOUNT | REASON");
         assertFalse("Unable to detect valid trinagle",
                 detectTriangle(4, 3, 5, INVALID));
         assertFalse("Unable to detect valid trinagle [CHECK OVERFLOW]",
@@ -88,6 +90,7 @@ public class TriangleTest {
 
     @Test
     public void testScaleneTriangle() {
+        System.err.println("$$$GRADER$$$ | ADDSCORE | AMOUNT | REASON");
         assertTrue("Unable to detect valid SCALENE trinagle",
                 detectTriangle(4, 3, 5, SCALENE));
         assertTrue("Unable to detect valid SCALENE trinagle",
@@ -98,6 +101,7 @@ public class TriangleTest {
 
     @Test
     public void testIsoscelesTriangle() {
+        System.err.println("$$$GRADER$$$ | ADDSCORE | AMOUNT | REASON");
         assertTrue("Unable to detect ISOSCELES trinagle",
                 detectTriangle(4, 3, 3,
                         ISOSCELES));
@@ -110,6 +114,7 @@ public class TriangleTest {
 
     @Test
     public void testEquilateralTriangle() {
+        System.err.println("$$$GRADER$$$ | ADDSCORE | AMOUNT | REASON");
         assertTrue("Unable to detect EQUILATERAL trinagle",
                 detectTriangle(3, 3, 3,
                         EQUILATERAL));
