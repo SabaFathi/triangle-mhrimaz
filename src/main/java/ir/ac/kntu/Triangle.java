@@ -6,6 +6,7 @@ public class Triangle{
 
     public static void main(String[] args){
 
+
         int first,second,third,max,middle,min;
 	Scanner scanner = new Scanner(System.in);        
         first = scanner.nextInt();
@@ -59,3 +60,4 @@ public class Triangle{
 	} 
     }
 }
+
