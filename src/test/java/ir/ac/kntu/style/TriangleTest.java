@@ -77,7 +77,7 @@ public class TriangleTest {
         assertTrue("Unable to detect invalid trinagle [CHECK OVERFLOW] \n"+
                    "$$$GRADER$$$ | { type:\"MSG\" , key:\"FAIL_REASON\" , value:\"[CHECK OVERFLOW]\", priority:1  }  | $$$GRADER$$$",
                 detectTriangle(Integer.MAX_VALUE, 10, Integer.MAX_VALUE - 10, INVALID));
-        System.err.println("$$$GRADER$$$ | { type:\"SCORE\" , AMOUNT:2 , REASON:\" Success InvalidTriangle Detection\" } | $$$GRADER$$$" );
+        System.err.println("$$$GRADER$$$ | { type:\"SCORE\" , amount:2 , reason:\" Success InvalidTriangle Detection\" } | $$$GRADER$$$" );
     }
 
     @Test
@@ -90,7 +90,7 @@ public class TriangleTest {
         assertFalse("Unable to detect valid trinagle [CHECK OVERFLOW]\n"+
                    "$$$GRADER$$$ | { type:\"MSG\" , key:\"FAIL_REASON\" , value:\"[CHECK OVERFLOW]\", priority:1  }  | $$$GRADER$$$",
                 detectTriangle(Integer.MAX_VALUE, 1, Integer.MAX_VALUE, INVALID));
-        System.err.println("$$$GRADER$$$ | { type:\"SCORE\" , AMOUNT:2 , REASON:\" Success ValidTriangle Detection\" } | $$$GRADER$$$" );
+        System.err.println("$$$GRADER$$$ | { type:\"SCORE\" , amount:2 , reason:\" Success ValidTriangle Detection\" } | $$$GRADER$$$" );
     }
 
     @Test
@@ -102,7 +102,7 @@ public class TriangleTest {
         assertTrue("Unable to detect valid SCALENE trinagle [CHECK OVERFLOW]\n"+
                    "$$$GRADER$$$ | { type:\"MSG\" , key:\"FAIL_REASON\" , value:\"[CHECK OVERFLOW]\", priority:1  }  | $$$GRADER$$$",
                 detectTriangle(2147483640, 2147483644, 7, SCALENE));
-        System.err.println("$$$GRADER$$$ | { type:\"SCORE\" , AMOUNT:2 , REASON:\" Success ScaleneTriangle Detection\" } | $$$GRADER$$$" );
+        System.err.println("$$$GRADER$$$ | { type:\"SCORE\" , amount:2 , reason:\" Success ScaleneTriangle Detection\" } | $$$GRADER$$$" );
     }
 
     @Test
@@ -116,7 +116,7 @@ public class TriangleTest {
                    "$$$GRADER$$$ | { type:\"MSG\" , key:\"FAIL_REASON\" , value:\"[CHECK OVERFLOW]\", priority:1  }  | $$$GRADER$$$",
                 detectTriangle(Integer.MAX_VALUE, 1, Integer.MAX_VALUE,
                         ISOSCELES));
-        System.err.println("$$$GRADER$$$ | { type:\"SCORE\" , AMOUNT:2 , REASON:\" Success IsoscelesTriangle Detection\" } | $$$GRADER$$$" );
+        System.err.println("$$$GRADER$$$ | { type:\"SCORE\" , amount:2 , reason:\" Success IsoscelesTriangle Detection\" } | $$$GRADER$$$" );
     }
 
     @Test
@@ -127,7 +127,7 @@ public class TriangleTest {
         assertTrue("Unable to detect EQUILATERAL trinagle [CHECK OVERFLOW]\n"+
                    "$$$GRADER$$$ | { type:\"MSG\" , key:\"FAIL_REASON\" , value:\"[CHECK OVERFLOW]\", priority:1  }  | $$$GRADER$$$",
                 detectTriangle(Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, EQUILATERAL));
-        System.err.println("$$$GRADER$$$ | { type:\"SCORE\" , AMOUNT:2 , REASON:\" Success EquilateralTriangle Detection\" } | $$$GRADER$$$" );
+        System.err.println("$$$GRADER$$$ | { type:\"SCORE\" , amount:2 , reason:\" Success EquilateralTriangle Detection\" } | $$$GRADER$$$" );
     }
 
 }
